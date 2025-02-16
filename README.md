@@ -1,7 +1,8 @@
 
 ## Configuring OpenConnect with SafeNet eToken 5110 on macOS Sonoma via PKCS#11
 
-Making OpenConnect work with the SafeNet eToken 5110 on macOS Sonoma using the PKCS#11 vendor module can be challenging. As of January 7, 2025, there is no official support for the SafeNet eToken in OpenSC, so attempting to get it to work may not be worthwhile. While running `pkcs11-tool` with the `--module` parameter might give the impression of functionality, this is misleading: there is no OpenSC-compatible driver for the eToken card, and it will not function outside of the `pkcs11-tool` command line.
+Making OpenConnect work with the SafeNet eToken 5110 on macOS Sonoma using the PKCS#11 vendor module can be challenging. As of January 7, 2025, there is no official support for the SafeNet eToken in OpenSC, so attempting to get it to work may not be worthwhile. 
+While running `pkcs11-tool` with the `--module` parameter might give the impression of functionality, this is misleading: there is no OpenSC-compatible driver for the eToken card, and it will not function outside of the `pkcs11-tool` command line.
 
 ### Step-by-Step Guide
 
